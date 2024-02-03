@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap');
+
+*,
+*::before, 
+*::after{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:#0a0a15;
+    margin: 0px;
+    overflow-x: hidden;
+}
+header{
+    position: absolute;
+    z-index: 9999;
+    width: 100vw;
+    height: 60px;
+    border-bottom: 1px solid rgba(255,255,255,01);
+    margin: 0;
+}
+header nav {
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul {
+    display: flex;
+    list-style: none;
+}
+header ul a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.83rem;
+    background-color: inherit;
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+header a:hover:not(#p){
+    background-color: white;
+    border: 1px solid white;
+    color: initial;
+
+}
+.active{
+    background-color: white;
+    border: 1px solid white;
+    color: initial;
+}
+.menu{
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+header ul li{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+.pulos{
+    display: flex;
+    font-size: 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+.pulos a{
+    display: flex;
+    z-index: 10;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 5px;
+    align-items: center;
+    justify-content: center;
+   
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+section{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+section::before {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #0a0a15 , transparent);
+    z-index: 1000;
+}
+ section img {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+
+ }
+img#mountain{
+    z-index:11;
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(88%);
+}
+h2#text{
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 10;
+    font-size: 100px;
+    transform: translatey(10px);
+    transform: translateX(30px);
+    background-image: radial-gradient(#fff 90%, #000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+a#bottom {
+    display: flex;
+    z-index: 11;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform: translatey(-80px);
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 0px 10px 0px 10px;
+    font-size: 20px;
+    background-color: white;
+    color: initial;
+
+
+}
+a#bottom:hover{
+    background-color: initial;
+    color: #fff;
+}
+img#planetao {
+    transform: scale(1.1);
+    filter: brightness(70%);
+}
+.text1 {
+    position: relative;
+    padding: 50px;
+
+}
+.text1 h2{
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.text1 p {
+    color: #fff;
+    font-size: 1.2em;
+
+}
