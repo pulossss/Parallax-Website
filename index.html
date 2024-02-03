@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="pulos">
+                <a href="#" id="p">Pulos</a>
+
+            </div>
+            <ul> 
+                <li class="home">
+                    <a href="#" class="active">Home</a>
+                </li>
+                <li class="project">
+                    <a href="#">Projeto</a>
+                </li>
+                <li class="about">
+                    <a href="#">Sobre</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="filtro"></div>
+        <section>
+            <img src="galaxy-mountain.png" id="mountain">
+            <h2 id="text">Parallax Universe</h2>
+            <a href="#ftext" id="bottom">Explore</a>
+            <img src="planetinhas.png" id="planetinhas">
+            <img src="planetao.png" id="planetao">
+        </div>
+        </section>
+    </main>
+    <div class="text1" id="ftext">
+            <h2>O efeito parallax</h2>
+            <p class="textt">tem como base uma ilusão de ótica, pois dá a impressão ao olho
+            humano de que objetos ou pessoas estão em movimento, mais perto ou afastados.
+            Assim, esse recurso de webdesign causa a sensação de que imagens distantes se movimentam 
+            mais devagar do que os objetos que estão próximos.</p>
+            <h2>Como isso funciona</h2>
+            <p>A diferença na posição de objetos vistos em diferentes faixas de visão, medido pelo ângulo 
+            de inclinação entre as faixas. Com isso, objetos próximos têm uma maior Parallax que objetos 
+            mais distantes, quando observado de posições diferentes.</p><br><p>Essa técnica vem sendo adotada há 
+            muito tempo em diferentes mídias, promovendo um efeito mais realista.</p>
+    </div>
+    <script>
+        let mountain= document.getElementById('mountain')
+        let text= document.getElementById('text')
+        let planetao= document.getElementById('planetao')
+        let planetinhas= document.getElementById('planetinhas')
+        let bottom= document.getElementById('bottom')
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY
+            planetinhas.style.left = value +'px';
+        })
+    </script>
+</body>
+</html>
